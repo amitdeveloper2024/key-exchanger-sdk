@@ -1,14 +1,27 @@
 {
-    "name": "nifif/key-exchanger-sdk",
+    "name": "amitdeveloper2024/key-exchanger-sdk",
+    "description": "Laravel SDK for Nifi Key Exchanger WebSocket service",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0",
+        "textalk/websocket": "^1.6",
+        "ramsey/uuid": "^4.7"
+    },
     "autoload": {
         "psr-4": {
-            "Nifif\\KeyExchangerSdk\\": "src/"
+            "amitdeveloper2024\\KeyExchanger\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "Nifi Payments"
+    "extra": {
+        "laravel": {
+            "providers": [
+                "amitdeveloper2024\\KeyExchanger\\KeyExchangerServiceProvider"
+            ],
+            "aliases": {
+                "KeyExchanger": "amitdeveloper2024\\KeyExchanger\\Facades\\KeyExchanger"
+            }
         }
-    ],
-    "require": {}
+    }
 }
