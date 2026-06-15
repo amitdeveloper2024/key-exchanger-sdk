@@ -6,7 +6,7 @@
 
   "require": {
     "php": ">=8.2",
-    "illuminate/support": ">=10 <13",
+    "illuminate/support": ">=10.0 <13",
     "textalk/websocket": "^1.6",
     "ramsey/uuid": "^4.7"
   },
