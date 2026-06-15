@@ -1,0 +1,14 @@
+{
+    "name": "nifif/key-exchanger-sdk",
+    "autoload": {
+        "psr-4": {
+            "Nifif\\KeyExchangerSdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nifi Payments"
+        }
+    ],
+    "require": {}
+}
