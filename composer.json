@@ -1,27 +1,33 @@
 {
-    "name": "amitdeveloper2024/key-exchanger-sdk",
-    "description": "Laravel SDK for Nifi Key Exchanger WebSocket service",
-    "type": "library",
-    "license": "MIT",
-    "require": {
-        "php": "^8.1",
-        "illuminate/support": "^10.0 || ^11.0 || ^12.0",
-        "textalk/websocket": "^1.6",
-        "ramsey/uuid": "^4.7"
-    },
-    "autoload": {
-        "psr-4": {
-            "amitdeveloper2024\\KeyExchanger\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "amitdeveloper2024\\KeyExchanger\\KeyExchangerServiceProvider"
-            ],
-            "aliases": {
-                "KeyExchanger": "amitdeveloper2024\\KeyExchanger\\Facades\\KeyExchanger"
-            }
-        }
+  "name": "amitdeveloper2024/key-exchanger-sdk",
+  "description": "Laravel SDK for Nifi Key Exchanger WebSocket service",
+  "type": "library",
+  "license": "MIT",
+
+  "require": {
+    "php": ">=8.2",
+    "illuminate/support": ">=10 <13",
+    "textalk/websocket": "^1.6",
+    "ramsey/uuid": "^4.7"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "AmitDeveloper2024\\KeyExchanger\\": "src/"
     }
+  },
+
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AmitDeveloper2024\\KeyExchanger\\KeyExchangerServiceProvider"
+      ],
+      "aliases": {
+        "KeyExchanger": "AmitDeveloper2024\\KeyExchanger\\Facades\\KeyExchanger"
+      }
+    }
+  },
+
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
