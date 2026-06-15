@@ -5,10 +5,12 @@
   "license": "MIT",
 
   "require": {
-     "php": ">=8.2",
-  "illuminate/support": ">=10.0 <13",
+    "php": ">=8.2",
+    "illuminate/support": ">=10.0 <13",
     "ratchet/pawl": "^0.4",
-    "ramsey/uuid": "^4.7"
+    "ramsey/uuid": "^4.7",
+    "react/event-loop": "^1.5",
+    "react/socket": "^1.16"
   },
 
   "autoload": {
