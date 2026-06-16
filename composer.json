@@ -6,7 +6,7 @@
 
   "require": {
     "php": ">=8.2",
-    "illuminate/support": ">=10.0 <13",
+    "illuminate/support": ">=10 <13",
     "ratchet/pawl": "^0.4",
     "ramsey/uuid": "^4.7",
     "react/event-loop": "^1.5",
